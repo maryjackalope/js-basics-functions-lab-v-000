@@ -14,12 +14,15 @@ function distanceFromHqInBlocks(location){
 }
 
 
-/*function distanceFromHqInFeet(location) {
+function distanceFromHqInFeet(location) {
   //returns a distance in feet 
   //calculates distances below 42nd street
-  distanceFromHqInBlocks(location) *264; 
+  let distance = distanceFromHqInBlocks(street);
+	distanceInFeet = distance * 264;
+	return distanceInFeet;
+  
 }
-*/
+
 
 function distanceTravelledInFeet(begin, end) {
   
@@ -36,6 +39,6 @@ function calculatesFarePrice(start, destination) {
   //if destination - start
   //charges 25 dollars for a distance over 2000 feet
   //no rides over 2500
-  if
+  
 }
 
