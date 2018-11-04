@@ -17,9 +17,14 @@ function distanceFromHqInBlocks(location){
 function distanceFromHqInFeet(location) {
   //returns a distance in feet 
   //calculates distances below 42nd street
-  let distance = distanceFromHqInBlocks(street);
-	distanceInFeet = distance * 264;
-	return distanceInFeet;
+  let distance;
+    if (location >= 42){
+    distance = (location - 42) * 264 ;
+  }
+  else {
+    distance = (42 - location) * 264;
+  }
+   return distance;
   
 }
 
