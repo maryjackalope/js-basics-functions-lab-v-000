@@ -24,8 +24,10 @@ function distanceFromHqInFeet(location) {
 }
 
 
-function distanceTravelledInFeet(begin, end) {
-  
+function distanceTravelledInFeet(start, destination) {
+  let distance = Math.abs(start - destination);
+	distanceInFeet = distance * 264;
+	return distanceInFeet;
   
 }
 
