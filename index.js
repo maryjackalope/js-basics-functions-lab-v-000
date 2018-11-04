@@ -33,7 +33,7 @@ function distanceTravelledInFeet(start, destination) {
 
 function calculatesFarePrice(start, destination) {
  
- const distance = Math.abs(destination - start;
+ const distance = Math.abs(start - destination);
   
   //gives customers a free sample (first 400ft free)
   //if destination - start < 4000 return "It's free"
